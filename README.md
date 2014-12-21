@@ -64,8 +64,7 @@ Add Activity Label description to the dataset
 activity.label <- read.table("./UCI HAR Dataset/activity_labels.txt",col.names=c("Activity_Code","Activity_Desc"))
 mergedData <- merge(activity.label,data.final,by=c("Activity_Code"))
 
-###5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable 
-###for each activity and each subject
+###5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 Reshape and cast final data to obtain the tidy data set
 
